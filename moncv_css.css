@@ -3,7 +3,6 @@
     --ma-couleur-2 : #D9D9D9;
     --ma-couleur-3 : #E5E5E5;
     --ma-couleur-4 : #476A80;
-    --ma-couleur-ecriture : #8A8987;
 }
 main {
     display: flex;
@@ -43,7 +42,7 @@ main {
 .profil, .contacts, .langues {
     padding-left: 10%;
     padding-right: 10%;
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
 }
 .perc_1 {
     width: 100%;
@@ -80,13 +79,23 @@ main {
 
 .contacts ul{
     list-style: none;
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
     padding: 0%;
 }
 
 ul img{
     width: 20px;
     height: 25px;
+}
+
+ul li{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+li div{
+    margin-left: 5px;
 }
 
 img + span {
@@ -194,13 +203,13 @@ img + span {
 
 .n_e{
     margin-left: 45px;
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
     line-height: 0px;
 }
 
 .desc_ec {
     margin-left: 45px;
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
 }
 
 .f_2{
@@ -228,17 +237,17 @@ img + span {
 }
 
 .exp_date {
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
     font-weight: bold;
 }
 
 .exp_tit {
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
     font-weight: bold;
 }
 
 .desc_exp {
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
 }
 
 .comp {
@@ -247,16 +256,16 @@ img + span {
 }
 
 .nom_comp {
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
     font-weight: bold;
 }
 
 .desc_comp {
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
 }
 
 .objectif_text {
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-4);
 }
 
 h4 {
@@ -264,7 +273,7 @@ h4 {
     padding-left: 10px;
     line-height: 30px;
     font-weight: bold;
-    color: var(--ma-couleur-ecriture);
+    color: var(--ma-couleur-3);
 }
 
 /* Ecron Tablet */
@@ -277,9 +286,17 @@ h4 {
         background-color: #D9D9D9;
     }
 
-    ul img {
-        display: none;
+    ul li{
+        display: block;
+        text-align: center;
+        margin-top: 5px;
     }
+    
+    li div{
+        margin-left: 5px;
+    }
+
+    
     
     .photo {
         width: 100%;
@@ -315,10 +332,18 @@ h4 {
 
     .contenu_g{
         min-width: 595px;
+        
     }
 
-    ul img {
-        display: none;
+    ul li{
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    
+    li div{
+        margin-left: 5px;
     }
 
     .photo {
