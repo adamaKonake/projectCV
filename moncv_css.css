@@ -1,9 +1,11 @@
+/* Les variables couleur */
 :root {
     --ma-couleur-1 : #1B304D;
     --ma-couleur-2 : #D9D9D9;
     --ma-couleur-3 : #E5E5E5;
     --ma-couleur-4 : #476A80;
 }
+/* partition de la balise main en deux blogs */
 main {
     display: flex;
     justify-content: flex-start;
@@ -98,9 +100,7 @@ li div{
     margin-left: 5px;
 }
 
-img + span {
-    margin-left: 10px;
-}
+
 
 .lg_1 {
     width: 100%;
